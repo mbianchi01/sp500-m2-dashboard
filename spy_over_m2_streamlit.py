@@ -11,7 +11,7 @@ fred = Fred(api_key=FRED_API_KEY)
 
 # Sidebar input
 st.sidebar.title("Settings")
-start_date = st.sidebar.date_input("Start Date", pd.to_datetime("1960-01-01"))
+start_date = st.sidebar.date_input("Start Date", pd.to_datetime("1990-01-01"))
 end_date = st.sidebar.date_input("End Date", pd.to_datetime("today"))
 interval = st.sidebar.selectbox("Resolution", ["1d", "1wk", "1mo"])
 
